@@ -1,0 +1,19 @@
+@media (max-width: 1399.98px) {
+    :root{
+        --primari_backgroud_color:#1C1E53;
+        --white_color:#ffffff;
+        --gry_color:#F4F6FC;
+        --primary_font_color:#282938;
+        --yellow_color:#FCD980;
+        --font_family:"Poppins", sans-serif;
+    }
+    .featuresPart__summary {
+        font-size: 41px;
+        line-height: 57px;
+       
+    }
+    .buildingPart__title {
+        font-size: 46px;
+        line-height: 62px;
+    }
+}

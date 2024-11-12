@@ -1,0 +1,515 @@
+/*----------------- common css ------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,ol,li{
+   list-style: none; 
+}
+a, span{
+    display: inline-block;
+    text-decoration: none;
+}
+img{
+    vertical-align: middle;
+}
+span, h1,h2,h3,h4,h5,h6, div, svg,a,img,section, button{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primari_backgroud_color:#1C1E53;
+    --white_color:#ffffff;
+    --gry_color:#F4F6FC;
+    --primary_font_color:#282938;
+    --yellow_color:#FCD980;
+    --font_family:"Poppins", sans-serif;
+}
+/*----------------- common css ------------------*/
+
+/*----------------- Nav css ------------------*/
+.coutomNav{
+    background-color: var(--primari_backgroud_color);
+    padding: 16px 0;
+}
+.customNavItem{
+    color: #BBBBCB;
+    font-family: var(--font_family);
+    font-weight: 500px;
+    font-size: 16px;
+    padding: 0 !important;
+    margin-right: 26px;
+    position: relative;
+}
+.customNavItem::after{
+    position: absolute;
+    content:"";
+    width: 0%;
+    height: 2px;
+    background-color: aqua;
+    left: 0;
+    bottom: 0;
+    transition: all linear .3s;
+}
+.customNavItem:hover::after{
+    width: 100%;
+}
+.customNavItem:hover{
+    color: #FCD980;
+}
+.customNavBtn{
+    color: var(--white_color);
+    border-radius: 41px;
+    padding: 16px 48px;
+    background-color: transparent;
+    border: none;
+    border: 2px solid rgba(227, 227, 229, 0.354);
+    margin-left: 80px ;
+    
+}
+.customNavBtn:hover{
+    background-color: rgba(0, 255, 255, 0.39);
+    transition: all linear .4s;
+
+}
+/*----------------- Nav css ------------------*/
+
+/*----------------- banner css ------------------*/
+#banerPart{
+    padding: 148px 0;
+    background-color: var(--primari_backgroud_color);
+}
+.banner_title{
+    font-size: 54px;
+    font-weight: 600px;
+    font-family: var(--font_family);
+    color: var(--gry_color);
+    line-height: 74px;
+}
+.banner_summary{
+    font-size: 16px;
+    font-family: var(--font_family);
+    font-weight: 500px;
+    color: var(--gry_color);
+    line-height: 28px;
+    margin-top: 24px;
+}
+.btn--modifiar{
+    margin-left: 0;
+    margin-top: 48px;
+}
+.btn--modifiar:hover{
+    background-color: #FCD980;
+}
+.btn--view{
+    border: none;
+}
+/*----------------- banner css ------------------*/
+
+
+/*----------------- work part css ------------------*/
+#workpart{
+    padding: 131px 0;
+    background-color: #F4F6FC;
+}
+.workPart__title{
+    font-size: 48px;
+    font-weight: 600;
+    font-family: var(--font_family);
+    color: #282938;
+    margin-bottom: 16px;
+}
+.workPart__summary{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--font_family);
+    color: #282938;
+    line-height: 28px;
+   
+}
+.workPart__btn{
+    color: #2405F2;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--font_family);
+    margin-bottom: 16px;
+}
+
+.work__taitle{
+    font-family: var(--font_family);
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--primary_font_color);
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+.work__summaty{
+    font-size: 16px;
+    font-family: var(--font_family);
+    font-weight: 400px;
+}
+/*----------------- work part css ------------------*/
+
+/*----------------- view part css ------------------*/
+#viewPart{
+    padding: 161px 0;
+    background-color: var(--white_color);
+}
+.view__taitle{
+    font-weight: 600;
+    font-size: 48px;
+    font-family: var(--font_family);
+    color: var(--primary_font_color);
+    margin-bottom: 64px;
+}
+.view__summary{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--font_family);
+    color: var(--primary_font_color);
+}
+.img__holder{
+  overflow: hidden;
+  cursor: pointer;
+}
+.overly{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: #282938a0;
+    left: -50%;
+    top: 0;
+    transition: all .4s;
+}
+.ocerly--modifire{
+    width: 100%;
+    left: -100%;
+    
+}
+.overly__contain{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-end;
+    row-gap: 10px;
+    padding-left: 48px;
+    padding-bottom: 76px;
+    color: var(--white_color);
+
+}
+.overly__btn{
+    color: var(--yellow_color);
+}
+.img__holder:hover .overly{
+    left: 0;
+}
+/*----------------- view part css ------------------*/
+
+/*------------------- featuresPart css ------------------- */
+#featuresPart{
+    padding: 172px 0;
+    background-color: #F4F6FC;
+}
+.featuresPart__title{
+    font-family: var(--font_family);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--primary_font_color);
+    
+    
+}
+.featuresPart__summary{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 64px;
+    color: var(--primary_font_color);
+    margin-bottom: 44px;
+    
+}
+.featuresPartContain{
+    padding: 58px 48px 48px 48px;
+     background-color: var(--white_color);
+     border-radius: 8px;
+}
+.featuresPartContain__icon{
+    margin-bottom: 22px;
+}
+.customaize__icon{
+    margin-bottom: 22px;
+}
+.featuresPartContain__title{
+    font-size: 24px;
+    font-weight: 500;
+    font-family: var(--font_family);
+    color: var(--primary_font_color);
+    margin-bottom: 12px;
+}
+.featuresPartContain__summary{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--font_family);
+    color: var(--primary_font_color);
+    line-height: 28px;
+    opacity: 0.7;
+}
+/*------------------- featuresPart css ------------------- */
+
+/*------------------- Claint Part css ------------------- */
+#clientsPart{
+    padding: 128px 0;
+    background-color: #FBFCFD;
+}
+.client__title{
+    font-family: var(--font_family);
+    color: var(--primary_font_color);
+    font-weight: 600;
+    line-height: 56px;
+    font-size: 38px;
+}
+.client__summary{
+    font-family: var(--font_family);
+    color: var(--primary_font_color);
+    font-weight: 400;
+    line-height: 28px;
+    font-size: 16px
+}
+.featuresRight__title{
+    font-family: var(--font_family);
+    color: var(--primary_font_color);
+    font-weight: 500;
+    line-height: 48px;
+    font-size: 32px;
+    margin-bottom: 48px;
+}
+.jennyPart{
+    column-gap: 20px;
+}
+.jennyPart__title{
+    font-family: var(--font_family);
+    color: var(--primary_font_color);
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+.jennyPart__summary{
+    font-family: var(--font_family);
+    color: var(--primary_font_color);
+    font-weight: 500;
+    font-size: 12px;
+}
+/*------------------- claint Part css ------------------- */
+
+/*------------------- Frequently Part css ------------------- */
+#frequentlyPart{
+    padding: 141px 0;
+    background-color: #FBFCFD;
+}
+.frequently__title{
+    font-size: 38px;
+    font-weight: 600;
+    font-family: var(--font_family);
+    color: var(--primary_font_color);
+    line-height: 56px;
+    margin-bottom: 16px;
+}
+.frequently__btn{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--font_family);
+    color: #2405F2;
+    opacity: 0.9;
+}
+.faq__number{
+    font-size: 24px;
+    font-family: 500;
+    color: #2405F2;
+}
+.acoding__title{
+    font-size: 24px;
+    font-family: 500;
+    color: var(--primary_font_color);
+}
+.acoding__summary{
+    font-size: 18px;
+    font-family: 500;
+    color: var(--primary_font_color);
+    opacity: 0.8;
+    line-height: 32px;
+}
+/*------------------- Frequently Part css ------------------- */
+
+/*------------------- Building Part css ------------------- */
+#buildingpart{
+     padding: 65px 0;
+     background-color: #FBFCFD;
+}
+.buildingPart__left{
+    padding: 96px 96px 24px 96px;
+    width: 100%;
+    height: 100%;
+    background-image: url(../image/claint.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.buildingPart__title{
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 74px;
+    font-family: var(--font_family);
+    color: var(--white_color);
+    margin-bottom: 24px;
+}
+.buildingpart__summary{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    font-family: var(--font_family);
+    color: var(--white_color);
+}
+.formPart{
+    background-color: #1C1E53;
+    padding: 96px 96px;
+    height: 100%;
+}
+.formPart__title{
+    font-size: 32px;
+    font-weight: 500;
+    font-family: var(--font_family);
+    color: var(--white_color); 
+}
+.formPart__summary{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--font_family);
+    color: var(--white_color);
+    line-height: 28px;
+    margin-top: 16px;
+}
+
+.inpute__design{
+    margin-top: 20px;
+    background: transparent;
+    padding: 18px 200px 18px 32px;
+    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.138);
+    border-radius: 5px;
+    color: var(--gry_color);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--font_family);
+    line-height: 28px;
+    opacity: .5;
+}
+.buildingpartRight__btn{
+    display: flex;
+    flex-direction: column;
+    margin-top: 39px;
+    
+}
+.buildingpart__btn{
+    width: 432px;
+    height: 64px;
+    border-radius: 41px;
+    background-color: #FCD980;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1B1C2B;
+    font-family: "Manrope", sans-serif;
+
+}
+.nextBtn{
+    text-align: center;
+    margin-top: 24px;
+    color: var(--white_color);
+    font-size: 18px;
+    font-family: var(--font_family);
+    font-weight: 500;
+}
+
+/*------------------- Building Part css ------------------- */
+
+/*------------------- Card Part css ------------------- */
+#cardPart{
+    padding: 191px 0;
+    background-color: #FBFCFD;
+}
+.card__item{
+    border: none;
+}
+/* .cardItemSpasic{
+    column-gap: 32px;
+} */
+.card__ditals{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--font_family);
+    opacity: 0.7;
+    color: var(--primary_font_color);
+}
+.card-title{
+    font-size: 24px;
+    font-weight: 500;
+    font-family: var(--font_family);
+    line-height: 36px;
+    color: var(--primary_font_color);
+}
+.card__more{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--font_family);
+    color: var(--primary_font_color);
+}
+/*------------------- Card Part css ------------------- */
+
+/*------------------- footer Part css ------------------- */
+#foorerPart{
+    padding: 128px 0;
+    background-color: var(--primari_backgroud_color);
+}
+.card__ditals--modifire{
+    color: var(--white_color);
+    margin-top: 22px;
+}
+.frequently__title--modifire{
+    color: var(--white_color);
+}
+.email{
+    padding: 17px 37px;
+    background-color: #FCD980;
+}
+.email__title{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--font_family);
+    color: var(--primary_font_color);
+}
+.email__summary{
+    font-size: 12px;
+    font-weight: 400;
+    font-family: var(--font_family);
+    color: var(--primary_font_color);
+}
+
+.text-white{
+    margin-left: 20px;
+    margin-top: 126px;
+
+}
+
+/*------------------- footer Part css ------------------- */
+
+/*------------------- sas Part css ------------------- */
+.coutomNav--modifire{
+    padding: 32px 0;
+    background-color: var(--white_color);
+}
+.customNavItem--modifire{
+    color: var(--primary_font_color);
+}
+/*------------------- sas Part css ------------------- */

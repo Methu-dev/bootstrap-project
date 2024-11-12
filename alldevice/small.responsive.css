@@ -1,0 +1,15 @@
+@media (max-width: 575.98px) {
+    :root{
+        --primari_backgroud_color:#1C1E53;
+        --white_color:#ffffff;
+        --gry_color:#F4F6FC;
+        --primary_font_color:#282938;
+        --yellow_color:#FCD980;
+        --font_family:"Poppins", sans-serif;
+    }
+    .customNavBtn {
+        padding: 19px 123px;
+        margin-left: 84px;
+        margin-top: 25px;
+    }
+}

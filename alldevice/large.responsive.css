@@ -1,0 +1,70 @@
+@media (max-width: 1199.98px) {
+    :root{
+        --primari_backgroud_color:#1C1E53;
+        --white_color:#ffffff;
+        --gry_color:#F4F6FC;
+        --primary_font_color:#282938;
+        --yellow_color:#FCD980;
+        --font_family:"Poppins", sans-serif;
+    }
+    .banner_title {
+        font-size: 39px;
+        line-height: 58px;
+    }
+    .btn--modifiar {
+        margin-top: 21px;
+    }
+    .work__summaty {
+        padding: 0 30px;
+    }
+    .view__taitle {
+        font-size: 42px;
+    }
+    .overly__contain {
+        padding-left: 14px;
+        padding-bottom: 14px;
+    }
+    .featuresPart__summary {
+        font-size: 32px;
+        line-height: 47px;
+    }
+    p {
+        margin-top: 14px;
+    }
+    .featuresRight__title {
+        font-size: 27px;
+        text-align: justify;
+        line-height: 44px;
+    }
+    .frequently__btn {
+        margin-bottom: 46px;
+    }
+    .buildingPart__title {
+        font-size: 30px;
+        line-height: 43px;
+    }
+    .buildingpart__summary {
+        line-height: 26px;
+    }
+    .formPart__summary {
+        font-size: 27px;
+        font-weight: 400;
+        line-height: 42px;
+    }
+    .inpute__design {
+        padding: 18px 303px 27px 32px;
+    }
+    .buildingpart__btn {
+        margin-left: 150px;
+    }
+    .card-title {
+        font-size: 19px;
+        line-height: 28px;
+    }
+    element.style {
+        margin-top: 15px;
+    }
+    .frequently__title {
+        margin-bottom: -84px;
+    }
+}

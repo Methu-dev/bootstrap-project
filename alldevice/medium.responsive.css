@@ -1,0 +1,47 @@
+@media (max-width: 991.98px) {
+    :root{
+        --primari_backgroud_color:#1C1E53;
+        --white_color:#ffffff;
+        --gry_color:#F4F6FC;
+        --primary_font_color:#282938;
+        --yellow_color:#FCD980;
+        --font_family:"Poppins", sans-serif;
+    }
+    /*=============== navbar responsive ===============*/
+    .navitem{
+        background-color: aqua;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .modifire--navitem{
+        color: #1C1E53;
+    }
+    .customNavBtn {
+        padding: 19px 123px;
+        margin-left: 177px;
+        margin-top: 25px;
+    }
+    /*=============== navbar responsive ===============*/
+    .banner_title {
+        font-size: 31px;
+        line-height: 44px;
+    }
+    .responsive--btn{
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    .featuresPart__summary {
+        font-size: 28px;
+    }
+    .featuresRight__title {
+        font-size: 18px;
+        line-height: 37px;
+    }
+    .buildingpart__btn {
+        margin-left: 37px;
+    }
+    .buildingPart__left {
+        padding: 96px 96px 124px 96px;
+        
+    }
+}
